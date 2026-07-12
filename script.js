@@ -180,4 +180,4 @@ setInterval(() => {
 }, 3000);
 setTimeout(() => {
     splash.style.opacity = "0";
-}, 999999999999);
+}, 99999999999);
