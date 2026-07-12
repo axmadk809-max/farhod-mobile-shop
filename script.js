@@ -178,4 +178,3 @@ setInterval(() => {
     slides[currentSlide].classList.add("active");
 
 }, 3000);
-splash.style.display = "none";
