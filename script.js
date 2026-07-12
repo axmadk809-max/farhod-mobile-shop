@@ -33,7 +33,7 @@ document.querySelectorAll(".buy").forEach(btn => {
         item.innerHTML = `
             <h4>${name}</h4>
             <p>${price.toLocaleString()} so'm</p>
-            <button class="remove">🗑️ O'chirish</button>
+            <button class="remove">🗑️  O'chirish</button>
             <hr>
         `;
 
