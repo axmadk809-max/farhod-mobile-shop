@@ -589,3 +589,7 @@ footer{
 }
 
 }
+.logo img {
+    width: 120px;   /* Kichraytirish */
+    height: auto;
+}

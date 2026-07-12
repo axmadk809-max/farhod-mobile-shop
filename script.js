@@ -178,6 +178,4 @@ setInterval(() => {
     slides[currentSlide].classList.add("active");
 
 }, 3000);
-setTimeout(() => {
-    splash.style.opacity = "0";
-}, 99999999999);
+splash.style.display = "none";
