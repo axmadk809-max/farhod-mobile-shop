@@ -611,8 +611,8 @@ iframe{
 }
 
 #splash img{
-    width:300px;
-    max-width:80%;
+    width:260px;
+    max-width:60%;
     animation:zoom 1s infinite alternate;
 }
 
