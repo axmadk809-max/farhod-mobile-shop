@@ -178,3 +178,9 @@ setInterval(() => {
     slides[currentSlide].classList.add("active");
 
 }, 3000);
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const splash = document.getElementById("splash");
+        if (splash) splash.style.display = "none";
+    }, 3000);
+});
