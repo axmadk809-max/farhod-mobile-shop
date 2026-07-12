@@ -178,3 +178,6 @@ setInterval(() => {
     slides[currentSlide].classList.add("active");
 
 }, 3000);
+window.onload = function () {
+    document.getElementById("splash").style.display = "flex";
+};

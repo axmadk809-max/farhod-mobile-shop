@@ -587,8 +587,35 @@ footer{
     text-align:center;
     padding:20px;
 }
+#splash img{
+    width:300px;
+    max-width:80%;
+    height:auto;
+}
+#splash{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
 
-}url06e5d5b6-488b-4923-965e-79d566b498a3.ing {
-    width: 80px;
-    height: auto;
+#splash img{
+    width:300px;
+    max-width:80%;
+    animation:zoom 1s infinite alternate;
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
 }
