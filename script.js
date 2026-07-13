@@ -181,3 +181,41 @@ setInterval(() => {
 window.onload = function () {
     document.getElementById("splash").style.display = "flex";
 };
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyAOeIAWd_3GYc9Z4MmIpVIn5w3V1uQocrE",
+authDomain: "farhod-mobile-shop.firebaseapp.com",
+databaseURL: "https://farhod-mobile-shop-default-rtdb.firebaseio.com",
+projectId: "farhod-mobile-shop",
+storageBucket: "farhod-mobile-shop.firebasestorage.app",
+messagingSenderId: "322049527568",
+appId: "1:322049527568:web:3cad01fe1797378a739f95"
+};
+
+const app=initializeApp(firebaseConfig);
+const db=getDatabase(app);
+
+const products=document.getElementById("products");
+
+onValue(ref(db,"products"),(snapshot)=>{
+
+products.innerHTML="";
+
+snapshot.forEach((item)=>{
+
+const data=item.val();
+
+products.innerHTML+=`
+<div class="card">
+<img src="${data.image}" width="200">
+<h2>${data.name}</h2>
+<h3>${data.price}</h3>
+<button>Sotib olish</button>
+</div>
+`;
+
+});
+
+});
