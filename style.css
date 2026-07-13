@@ -431,15 +431,6 @@ margin-top:20px;
 
 .banner button:hover{
     transform:scale(1.08);
-}.badge{
-    display:inline-block;
-    background:#ff3b30;
-    color:#fff;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:12px;
-    font-weight:bold;
-    margin-bottom:12px;
 }
 
 .card{
